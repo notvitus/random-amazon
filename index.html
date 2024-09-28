@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random Among Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a; /* Dunkler Hintergrund */
+            color: white; /* Weiße Schrift für besseren Kontrast */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>find something. among Us!</h1>
+        <button onclick="searchRandomItem()">Click me!</button>
+    </div>
+
+    <script>
+        function searchRandomItem() {
+            // A list of random search items
+            const items = ['Laptop', 'Book', 'Phone', 'Smartwatch', 'Coffee Maker', 'Lamp', 'Backpack', 'Shoes', 'Headphones', 'Monitor', 'UwU', 'Ah', 'evian', 'Pepe', 'Among US'];
+            
+            // Select a random item from the list
+            const randomItem = items[Math.floor(Math.random() * items.length)];
+
+            // Open the Amazon search in a new tab
+            window.open(`https://www.amazon.com/s?k=${randomItem}`, '_blank');
+        }
+    </script>
+</body>
+</html>
